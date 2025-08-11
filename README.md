@@ -18,18 +18,18 @@ This is a demo of our proposed model inversion attack, **DiffMI**.
   * **Python (3.9.23)**
   * **torch (2.1.2+cu118)**
   * **torchvision (0.16.2+cu118)**
-  * **torchjpeg ()**
+  * **torchjpeg (0.9.32)**
   * **facenet-pytorch (2.5.3)**
-  * **diffusers ()**
+  * **diffusers (0.34.0)**
   * **accelerate (0.26.1)**
-  * **scipy ()**
-  * **scikit-learn ()**
+  * **scipy (1.13.1)**
+  * **scikit-learn (1.6.1)**
   
   The versions in `()` have been tested.
 
 ## Installation
 ```
-git clone https://github.com/xxxx/DiffMI.git
+git clone https://github.com/azrealwang/DiffMI.git
 cd DiffMI
 ```
 
