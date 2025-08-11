@@ -1,0 +1,5 @@
+facenet-pytorch==2.5.3
+diffusers
+accelerate==0.26.1
+scipy
+scikit-learn
