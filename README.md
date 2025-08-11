@@ -69,13 +69,12 @@ The image name must satisfy `00000_0.jpg`. `00000` and `_0` indicates the image 
 
 ### Step (a) - Robust Latent Code Initialization
 ```
-python initialize.py --output latents/demo --V 10 --tau_K 0.999 --tau_D 0.999
+python initialize.py --output latents/demo --V 1000 --tau_K 0.999 --tau_D 0.999
 ```
-We have released 1,000 robust latent codes, available in `latents/best` and `latents/best.mat`.
 
 ### Step (b) and (c) - Model Inversion Attack
 ```
-python DiffMI.py --input_target imgs/target/celeba --output imgs/inversion/partialface_celeba --model partialface --latent latents/best --N 3 --attack white --eps 35 --tau_C 0.98 --tau_F 0.28
+python DiffMI.py --input_target imgs/target/celeba --output imgs/inversion/partialface_celeba --model partialface --latent latents/demo --N 3 --attack white --eps 35 --tau_C 0.98 --tau_F 0.28
 ```
 
 ### Cross-Model Evaluation
