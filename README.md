@@ -2,6 +2,17 @@
 
 This is a demo of our proposed model inversion attack, **DiffMI**.
 
+The threat of model inversion against embedding-based face recognition systems. Although such systems store embeddings instead of raw images for privacy protection, model inversion attacks can reconstruct facial images directly from embeddings, enabling downstream threats such as presentation attacks that can bypass authentication.
+
+<img src="figures/model_inversion.jpg" alt="model_inversion" style="width:350px;"/>
+
+Framework of DiffMI, which reconstructs a facial image sharing the same identity as a private face solely from its embedding. The generator, a denoising diffusion model (DDPM), is pretrained independently, without prior knowledge of the private face or the target model.
+* Step (a): A set of highly robust latent codes is generated once and reused for any target.
+* Step (b): $N$ codes whose reconstructions have the highest similarity to the target embedding are selected as initialization.
+* Step (c): These codes undergo adversarial refinement to progressively align the reconstructions with the target embedding.
+
+<img src="figures/pipeline.jpg" alt="pipeline" style="width:600px;"/>
+
 ****
 ## Contents
 * [Main Requirements](#Main-Requirements)
