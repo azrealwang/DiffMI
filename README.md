@@ -1,6 +1,6 @@
-# Breaking Face Recognition Privacy via Diffusion-Driven Training-Free Model Inversion
+# DiffMI: Breaking Face Recognition Privacy via Diffusion-Driven Training-Free Model Inversion
 
-This is a demo of our proposed model inversion attack, **DiffMI**.
+[PDF](https://arxiv.org/pdf/2504.18015)
 
 The threat of model inversion against embedding-based face recognition systems. Although such systems store embeddings instead of raw images for privacy protection, model inversion attacks can reconstruct facial images directly from embeddings, enabling downstream threats such as presentation attacks that can bypass authentication.
 
@@ -74,14 +74,13 @@ The image name must satisfy `00000_0.jpg`. `00000` and `_0` indicates the image 
 
 * [PartialFace](https://github.com/Tencent/TFace/tree/master/recognition/tasks/partialface): IResNet50 pretrained using the MS1MV2 dataset; download from [MAP2V](https://github.com/Beauty9882/MAP2V) and place it in `checkpoints/`.
 
-*We are not the authors of any of these references.*
-
 ## Usage
 
 ### Step (a) - Robust Latent Code Initialization
 ```
 python initialize.py --output latents/demo --V 1000 --tau_K 0.999 --tau_D 0.999
 ```
+Our generated latent codes (V=1000, \tau_K=\tau_D=0.999) are publicly available at [Google Drive](https://drive.google.com/file/d/15u4J5poo4kPgMvV9xyqW0SU-oDtmhU-v/view?usp=sharing).
 
 ### Step (b) and (c) - Model Inversion Attack
 ```
@@ -96,3 +95,18 @@ python evaluate.py --model arcface --tau_F 0.23 --input_eval imgs/inversion/part
 ## User Study
 
 We provide the full user study questionnaire in `UserStudy.pdf`.
+
+## Citation
+```
+@article{wang2025diffmi,
+  title={DiffMI: Breaking Face Recognition Privacy via Diffusion-Driven Training-Free Model Inversion},
+  author={Wang, Hanrui and Wang, Shuo and Lu, Chun-Shien and Echizen, Isao},
+  journal={arXiv preprint arXiv:2504.18015},
+  year={2025}
+}
+```
+
+## Contact
+If you have any questions about our work, please do not hesitate to contact us by email.
+
+Hanrui Wang: hanrui_wang@nii.ac.jp
