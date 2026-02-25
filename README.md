@@ -11,7 +11,7 @@ Framework of DiffMI, which reconstructs a facial image sharing the same identity
 * Step (b): $N$ codes whose reconstructions have the highest similarity to the target embedding are selected as initialization.
 * Step (c): These codes undergo adversarial refinement to progressively align the reconstructions with the target embedding.
 
-<img src="figures/defense_families.jpg" alt="pipeline" style="width:600px;"/>
+<img src="figures/pipeline.jpg" alt="pipeline" style="width:600px;"/>
 
 ****
 ## Contents
