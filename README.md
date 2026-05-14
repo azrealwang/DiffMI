@@ -1,6 +1,8 @@
-# DiffMI: Breaking Face Recognition Privacy via Diffusion-Driven Training-Free Model Inversion
+# [TIFS 2026] DiffMI: Breaking Face Recognition Privacy via Diffusion-Driven Training-Free Model Inversion
 
-[PDF](https://arxiv.org/pdf/2504.18015)
+[Publication](https://doi.org/10.1109/TIFS.2026.3684282) | [PDF](https://arxiv.org/pdf/2504.18015)
+
+[Hanrui Wang](https://scholar.google.com/citations?user=1XTseJEAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=uaGgpMgAAAAJ), [Chun-Shien Lu](https://scholar.google.com/citations?user=3iOHvUAAAAAJ), and [Isao Echizen](https://scholar.google.com/citations?user=RduUnVIAAAAJ)
 
 The threat of model inversion against embedding-based face recognition systems. Although such systems store embeddings instead of raw images for privacy protection, model inversion attacks can reconstruct facial images directly from embeddings, enabling downstream threats such as presentation attacks that can bypass authentication.
 
@@ -98,11 +100,14 @@ We provide the full user study questionnaire in `UserStudy.pdf`.
 
 ## Citation
 ```
-@article{wang2025diffmi,
+@article{wang2026diffmi,
   title={DiffMI: Breaking Face Recognition Privacy via Diffusion-Driven Training-Free Model Inversion},
   author={Wang, Hanrui and Wang, Shuo and Lu, Chun-Shien and Echizen, Isao},
-  journal={arXiv preprint arXiv:2504.18015},
-  year={2025}
+  journal={IEEE Transactions on Information Forensics and Security},
+  year={2026},
+  volume={21},
+  pages={4275-4290},
+  doi={10.1109/TIFS.2026.3684282}
 }
 ```
 
